@@ -2,7 +2,7 @@ require 'pry'
 require 'json'
 
 def b_data 
-  # hash in the form of {"seasonX": ["name"=>"",]
+  # hash in the form of {"seasonX": [{"str"=>"str",...},...]
   file = File.read('spec/fixtures/contestants.json')
   binding.pry
   return data = JSON.parse(file)
